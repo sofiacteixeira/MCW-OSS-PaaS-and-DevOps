@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  isdocker:
+    image: isdocker
+    build:
+      context: Hands-on lab/lab-files/node_modules/is-docker
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 3000:3000
